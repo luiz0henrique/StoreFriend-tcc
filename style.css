@@ -85,6 +85,20 @@ footer{
     margin: auto;
 }
 
+.slide{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.emulador-more{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
 .info_01{
     position: absolute;
     border: 1px solid rgb(80, 31, 31);
