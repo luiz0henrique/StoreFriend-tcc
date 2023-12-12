@@ -1,0 +1,362 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    background-color: #860000;
+    text-align: center;
+}
+
+.titulo{
+    border: 1px solid transparent;
+    height: max-content;
+}
+
+#info{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    background-color: gray;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+}
+.info-icon{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.mais-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 270px, 400px ;
+    grid-template-rows: 133px, 133px, 133px,;
+    grid-template-areas:
+    "primeiro segundo"
+    "primeiro terceiro"
+    "primeiro quarto"
+    ;
+}
+
+.jogo-04{
+    grid-area: primeiro;
+}
+
+.jogo-05{
+    grid-area: segundo;
+}
+
+.jogo-06{
+    grid-area: terceiro;
+}
+
+.jogo-07{
+    grid-area: quarto;
+}
+
+.categorias-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.info_01{
+    position: absolute;
+    border: 1px solid rgb(80, 31, 31);
+    display: flex;
+    background-color: gray;
+    height: 100%;
+    flex-direction: column;
+}
+
+.img-boot{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.unMost{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.chose{
+    color: yellow;
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.button{
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    height: 1fr;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+}
+
+.emulador-img{
+    transform: translateX(0);
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+}
+
+.atuais{
+    width: 700px;
+    display: grid;
+    grid-template-columns: 200px, 200px, 200px;
+    grid-template-areas:
+     "principal jogo2 jogo3"
+     ;
+    margin: auto;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+}
+
+.jogo-01{
+    grid-area: principal;
+}
+
+.jogo-02{
+    grid-area: jogo2;
+}
+
+.jogo-03{
+    grid-area: jogo3;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+#mais{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.mais2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    border: 1px solid aquamarine;
+    background-color: aquamarine;
+    border-radius: 15px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(51, 47, 47);
+    margin-bottom: 20px;
+}
+img{
+    height: 50%;
+}
+
+.game2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border: 1px solid gray;
+    background-color: white;
+    width: 400px;
+    height: 100px;
+}
+
+
+.game3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    border: 1px solid gray;
+    background-color: white;
+    width: 270px;
+    height: 400px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #860000;
+    background-color: #860000;
+    width: 100%;
+}
+
+#categorias{
+    display: flex;
+    justify-content: center;
+}
+
+.catego-img{
+    height: 95%;
+    width: 95%;
+}
+
+.catego-img:hover{
+    width: 110%;
+    height: 110%;
+    transition: 0.5s;
+}
+
+.catego{
+    background-color: gray;
+    border: 1px solid gray;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-catego,.right-catego{
+    background-color: gray;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.catego-text{
+    text-align: center;
+    color: white;
+}
+
+@media (max-width:890px) {
+    /* body{
+        background-color: green;
+    } */
+    nav{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+    }
+    #info{
+        visibility: visible;
+        opacity: 1;
+    }
+    header{
+        height: 50px;
+    }
+    .info-icon{
+        opacity: 1;
+        visibility: visible;
+    }
+    .atuais{
+        grid-template-columns: 200px, 200px;
+        grid-template-rows: 200px, 300px;
+        grid-template-areas: 
+        "principal principal"
+        "jogo2 jogo3";
+        gap: 10px;
+    }
+    .jogo-01{
+        flex-direction: row;
+        height: 200px;
+        width: 95%;
+        margin-bottom: 10px
+    }
+    .jogo-02,.jogo-03{
+        width: 300px;
+    }
+
+    img{
+        height: 100%;
+    }
+    a{
+        font-size: 1.625rem ;
+        height: 75px;
+        width: 150px;
+    }
+    h3{
+        font-size: 1.875rem;
+    }
+    .game2{
+        width: 300px;
+    }
+    .logo{
+        font-size: 3.125rem;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .texto{
+        font-size: 1.25rem;
+    }
+    .game3{
+        flex-direction: row;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    .mais-container{
+
+        grid-template-columns: 100px , 100px, 100px ;
+    grid-template-rows: 200px, 200px;
+    grid-template-areas:
+    "primeiro primeiro primeiro"
+    "segundo terceiro quarto"
+    ;
+    gap: 10;
+    }
+
+    .mais2{
+        flex-direction: row;
+    }
+    .game2{
+        width: 200px;
+        margin: 10px;
+        flex-direction: column;
+        height: 300px;
+    }
+}
