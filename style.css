@@ -306,7 +306,7 @@ nav{
         visibility: visible;
     }
     .atuais{
-        grid-template-columns: 200px, 200px;
+        grid-template-columns: 1fr, 1fr;
         grid-template-rows: 200px, 300px;
         grid-template-areas: 
         "principal principal"
@@ -316,11 +316,11 @@ nav{
     .jogo-01{
         flex-direction: row;
         height: 200px;
-        width: 95%;
+        width: 100%;
         margin-bottom: 10px
     }
     .jogo-02,.jogo-03{
-        width: 300px;
+        width: 50%;
     }
 
     img{
@@ -338,7 +338,7 @@ nav{
         width: 300px;
     }
     .logo{
-        font-size: 3.125rem;
+        font-size: 20px;
     }
     h1{
         font-size: 30px;
@@ -355,7 +355,7 @@ nav{
 
     .mais-container{
 
-        grid-template-columns: 100px , 100px, 100px ;
+        grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px, 200px;
     grid-template-areas:
     "primeiro primeiro primeiro"
@@ -368,7 +368,7 @@ nav{
         flex-direction: row;
     }
     .game2{
-        width: 200px;
+        width: 100%;
         margin: 10px;
         flex-direction: column;
         height: 300px;
