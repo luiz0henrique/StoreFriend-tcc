@@ -285,6 +285,10 @@ nav{
     color: white;
 }
 
+.nomeGrande{
+    font-size: 1.25rem;
+}
+
 @media (max-width:890px) {
     /* body{
         background-color: green;
@@ -306,7 +310,7 @@ nav{
         visibility: visible;
     }
     .atuais{
-width:400px;
+        width: 400px;
         grid-template-columns: 200px, 200px;
         grid-template-rows: 200px, 300px;
         grid-template-areas: 
@@ -315,14 +319,15 @@ width:400px;
         gap: 10px;
     }
     .jogo-01{
+        background-color: whitesmoke;
         flex-direction: row;
-        height: 200px;
         width: 100%;
-        margin:0;
+        height: 200px;
+        margin: 0;
     }
     .jogo-02,.jogo-03{
         width: 100%;
-margin:0;
+        margin: 0;
     }
 
     img{
@@ -331,12 +336,13 @@ margin:0;
     a{
         font-size: 1.625rem ;
         height: 75px;
-        width: 150px;
+        width: 100px;
     }
     h3{
         font-size: 1.875rem;
     }
-
+    .game2{
+        width: auto;
     }
     .logo{
         font-size: 1.875rem;
@@ -355,14 +361,14 @@ margin:0;
     }
 
     .mais-container{
-width:400px;
-    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px, 200px;
     grid-template-areas:
     "primeiro primeiro primeiro"
     "segundo terceiro quarto"
     ;
-    gap: 10;
+    gap: 10px;
     }
 
     .mais2{
@@ -373,5 +379,8 @@ width:400px;
         margin: 5px;
         flex-direction: column;
         height: 300px;
+    }
+    .nomeGrande{
+        font-size: 1rem;
     }
 }
