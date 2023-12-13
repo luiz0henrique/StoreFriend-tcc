@@ -2,6 +2,7 @@
 let infoButton = document.querySelector("#info")
 let info = document.querySelector(".info_01")
 let ifClose = document.querySelector(".back")
+let ifCloseOp = document.querySelector(".back1")
 let emu = document.querySelector(".emu")
 let ifBack = 0
 let imgCatego = document.querySelector(".catego-img")
@@ -17,6 +18,8 @@ let emuCont = 0
 infoButton.addEventListener("click", abrirOuFecharInfo)
 
 ifClose.addEventListener("click", abrirOuFecharInfo)
+
+ifClose1.addEventListener("click", abrirOuFecharInfo)
 
 emu.addEventListener("click", mostrarEmuladores)
 
