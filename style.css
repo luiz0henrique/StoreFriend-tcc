@@ -104,7 +104,7 @@ footer{
     border: 1px solid rgb(80, 31, 31);
     display: flex;
     background-color: gray;
-    height: 100%;
+    height: fit-content;
     flex-direction: column;
 }
 
@@ -331,7 +331,7 @@ nav{
     }
 
     img{
-        height: 100px;
+        height: 150px;
     }
     a{
         font-size: 1.625rem ;
@@ -382,5 +382,9 @@ nav{
     }
     .nomeGrande{
         font-size: 1rem;
+    }
+
+    .img-min{
+        height: 100px;
     }
 }
