@@ -306,7 +306,8 @@ nav{
         visibility: visible;
     }
     .atuais{
-        grid-template-columns: 1fr, 1fr;
+width:400px;
+        grid-template-columns: 200px, 200px;
         grid-template-rows: 200px, 300px;
         grid-template-areas: 
         "principal principal"
@@ -317,14 +318,15 @@ nav{
         flex-direction: row;
         height: 200px;
         width: 100%;
-        margin-bottom: 10px
+        margin:0;
     }
     .jogo-02,.jogo-03{
-        width: 50%;
+        width: 100%;
+margin:0;
     }
 
     img{
-        height: 100%;
+        height: 100px;
     }
     a{
         font-size: 1.625rem ;
@@ -334,11 +336,10 @@ nav{
     h3{
         font-size: 1.875rem;
     }
-    .game2{
-        width: 300px;
+
     }
     .logo{
-        font-size: 20px;
+        font-size: 1.875rem;
     }
     h1{
         font-size: 30px;
@@ -349,13 +350,13 @@ nav{
     .game3{
         flex-direction: row;
         height: 200px;
-        width: 100%;
+        width: 400px;
         margin-bottom: 10px
     }
 
     .mais-container{
-
-        grid-template-columns: repeat(3, 1fr);
+width:400px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px, 200px;
     grid-template-areas:
     "primeiro primeiro primeiro"
@@ -368,8 +369,8 @@ nav{
         flex-direction: row;
     }
     .game2{
-        width: 100%;
-        margin: 10px;
+        width: 130px;
+        margin: 5px;
         flex-direction: column;
         height: 300px;
     }
